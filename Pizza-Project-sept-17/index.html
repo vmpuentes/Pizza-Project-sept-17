@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.2.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Pizza Project</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <div>Mimi's Macrobiotic Pizza</div>
+    </div>
+  <div class="container">
+    <div class="row">
+         <div class="col-md-5 box">
+           <h2>Order your Pizza Online!</h2>
+           <form id="pizzaInput">
+             <div class="form-group">
+               <label for="yourpizza">Name:</label>
+               <input type=selector id="yourname">
+             </div>
+             <div class="form-group">
+               <label for="initial-order">Size<label>
+               <input class="initial-deposit" type="text">
+             </div>
+           </div>
+           <div class="col-md-5 box">
+             <h2>Toppings</h2>
+             <div class="form-group">
+               <label for="topping">Here are the toppings to choose from...</label>
+               <input class="topping" type="selector">
+             </div>
+               <label for="withdrawal">Price</label>
+               <input class="withdrawal" type="text">
+           </div>
+         </div>
+         <div class="row">
+           <button type="calculate">Calculate Price</button>
+
+         </div>
+       </form>
+       <div class="row box">
+         <div id="currentbalance">
+           <h3>Total:</h3>
+           <div class="outputReading">
+             <h4>Thank you for choosing Jabroni's</h4>
+           </div>
+         </div>
+       </div>
+     </div>
+
+  </body>
+</html>
