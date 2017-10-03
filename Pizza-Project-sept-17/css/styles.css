@@ -22,3 +22,7 @@ body {
 form {
   color: yellow;
 }
+
+#orderDetails {
+  display: none;
+}

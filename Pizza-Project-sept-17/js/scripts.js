@@ -20,17 +20,18 @@ var orderExtraPizza = new Pizza (toppings, size, crust);
 $(document).ready(function() {
   $("#pizzaUserInput").submit(function(event) {
     event.preventDefault();
-    var userToppings = $("#toppings").val();
+    $("#input:checkbox[name=toppings]:checked").each(function() {
+    var userToppings = $(this).val();
     var userSize = $("#size").val();
     var crust = $("#crust").val();
     var Pizza = new Pizza ();
-    $("#toppins").each(function() {
+    $("#toppings").each(function() {
       var userToppings = pizza.toppings.append("#toppings").val();
   });
     var getPrice = pizza.getPrice();
-    $("#toppings").append(userToppings);
-      $("#size").append(userSize);
-        $("#crust").append(crust);
-          $("#userOrder").append(pizza.getPrice);
+    $("#orderDetails").append(pizza.getPrice);
+      $("#toppings").append(userToppings);
+        $("#size").append(userSize);
+          $("#crust").append(crust);  
         });
       });
